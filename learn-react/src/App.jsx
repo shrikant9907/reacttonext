@@ -1,12 +1,11 @@
-import { useState } from 'react'
- 
+import { useState } from 'react' 
+
 function App() {
 
   const [showModal, setShowModal] = useState(false)
- 
+
   return (
     <>
- 
     </>
   )
 }
