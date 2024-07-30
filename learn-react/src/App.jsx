@@ -13,8 +13,8 @@ function App() {
 
     <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
 
-    <h3 className='font-bold text-lg mb-3'>Create a Modal | React + Tailwind | React To Next</h3>
-    <div className='text-sm text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium ea itaque officiis earum eum recusandae nesciunt eaque dolore dolor, tempore nemo, aperiam optio explicabo expedita quo, rem eveniet reprehenderit!</div>
+    <h3 className='font-bold text-lg mb-3'>Create a Modal | React + Tailwind</h3>
+    <div className='text-sm text-gray-700'>You are watching this example on channel React To Next. Lorem ipsum dolor sit amet consectetur adipisicing elit. Architectreprehenderit!</div>
 
     </Modal>
     </>

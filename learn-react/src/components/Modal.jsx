@@ -17,7 +17,7 @@ const Modal = ({isOpen, children, onClose}) => {
         <div onClick={onClose} className='text-lg absolute top-0 right-3 cursor-pointer'>&times;</div>
         
         {children}
-        ś
+        
         </div>
     </div>
   )
