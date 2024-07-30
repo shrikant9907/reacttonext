@@ -1,45 +1,22 @@
-import './App.css' 
-import Card from './components/Card'
+import { useState } from 'react'
+import './App.css'  
+import Modal from './components/Modal'
 
 function App() {
+
+  const [showModal, setShowModal] = useState(false)
  
   return (
     <>
-      <div className='flex justify-start items-start gap-4 p-4' >
-      <Card 
-      heading={"This is the card heading"}
-      buttonLabel={"View More"}
-      imgSrc={"https://reacttonext.com/wp-content/uploads/2024/07/build-search-auto-complete-react-js-and-tailwind-css-768x432.png"}
-      buttonLink={"https://www.reacttonext.com"}
-    >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore velit esse officiis, quibusdam eligendi aperiam aliquid unde necessitatibus alias veritatis ut ipsam numquam placeat, ipsum beatae blanditiis, consequatur accusamus?
-    </Card>
 
-    <Card 
-      heading={"This is the card heading"}
-      buttonLabel={"View More"}
-      imgSrc={"https://reacttonext.com/wp-content/uploads/2024/07/build-search-auto-complete-react-js-and-tailwind-css-768x432.png"}
-      buttonLink={"https://www.reacttonext.com"}
-    >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore velit esse officiis, quibusdam eligendi aperiam aliquid unde necessitatibus alias veritatis ut ipsam numquam placeat, ipsum beatae blanditiis, consequatur accusamus?
-    </Card>
-    <Card 
-      heading={"This is the card heading"}
-      buttonLabel={"View More"}
-      imgSrc={"https://reacttonext.com/wp-content/uploads/2024/07/build-search-auto-complete-react-js-and-tailwind-css-768x432.png"}
-      buttonLink={"https://www.reacttonext.com"}
-    >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore velit esse officiis, quibusdam eligendi aperiam aliquid unde necessitatibus alias veritatis ut ipsam numquam placeat, ipsum beatae blanditiis, consequatur accusamus?
-    </Card>
-    <Card 
-      heading={"This is the card heading"}
-      buttonLabel={"View More"}
-      imgSrc={"https://reacttonext.com/wp-content/uploads/2024/07/build-search-auto-complete-react-js-and-tailwind-css-768x432.png"}
-      buttonLink={"https://www.reacttonext.com"}
-    >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim labore velit esse officiis, quibusdam eligendi aperiam aliquid unde necessitatibus alias veritatis ut ipsam numquam placeat, ipsum beatae blanditiis, consequatur accusamus?
-    </Card>
-      </div>
+    <button onClick={() => setShowModal(true)} className='bg-blue-700 text-white py-2 px-3 rounded'>Open Modal</button>
+
+    <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+
+    <h3 className='font-bold text-lg mb-3'>Create a Modal | React + Tailwind | React To Next</h3>
+    <div className='text-sm text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium ea itaque officiis earum eum recusandae nesciunt eaque dolore dolor, tempore nemo, aperiam optio explicabo expedita quo, rem eveniet reprehenderit!</div>
+
+    </Modal>
     </>
   )
 }
