@@ -8,7 +8,7 @@ const ProductSearchAutoComplete = () => {
     const [products, setProducts] = useState([]);
 
 
-    const fetchProductsData = useCallback( _.debounce( async () => {
+    const fetchProductsData = useCallback( _.debounce( async (keyword) => {
         // Fetch the API reponse here.
         const response = await axios.get('https://fakestoreapi.com/products');
      
@@ -33,7 +33,7 @@ const ProductSearchAutoComplete = () => {
 
 
     useEffect(() => {
-        fetchProductsData();
+        fetchProductsData(keyword);
     }, [keyword])
 
 
