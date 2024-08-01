@@ -1,11 +1,10 @@
-import { useState } from 'react' 
-import ProductSearchAutoComplete from './components/ProductSearchAutoComplete'
+ import SignupForm from './components/SignupForm'
 
 function App() {
 
   return (
     <>
-    <ProductSearchAutoComplete />
+    <SignupForm />
     </>
   )
 }
