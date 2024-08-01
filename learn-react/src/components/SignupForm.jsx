@@ -7,18 +7,18 @@ import * as Yup from 'yup';
 const SignupSchema = Yup.object().shape({
   email: Yup.string().email('Please correct your email.').required('Email is required.'),
   password: Yup.string()
-    .min(8, 'Password too short')
-    .matches(/[a-zA-Z]/, 'Password must contain letters')
-    .matches(/\d/, 'Password must contain numbers')
+    .min(8, 'Password should be min 8 characters.')
+    .matches(/[a-zA-Z]/, 'Password must contain letters.')
+    .matches(/\d/, 'Password must contain numbers.')
     .required('Password is required.'),
   confirmPassword: Yup.string()
-    .oneOf([Yup.ref('password'), null], 'Passwords must match')
+    .oneOf([Yup.ref('password'), null], 'Passwords must match.')
     .required('Confirm password is required.')
 });
 
 // Handle form submission
 const handleFormSubmission = (values) => { 
-  console.log(values);
+  console.log(values);ś
 };
 
 // Signup Form
@@ -35,7 +35,7 @@ const SignupForm = () => {
 
   return (
     <form onSubmit={formik.handleSubmit} className="max-w-md mx-auto p-5 px-8 border border-gray-50 rounded-lg shadow-lg">
-      <h2 className="text-xl font-bold mb-4">Sign Up</h2>
+      <h2 className="text-xl font-bold mb-4 text-center">Sign Up</h2>
 
       <div className="mb-4">
         <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
@@ -79,7 +79,7 @@ const SignupForm = () => {
         {formik.touched.confirmPassword && formik.errors.confirmPassword && <p className="text-red-500 text-sm">{formik.errors.confirmPassword}</p>}
       </div>
 
-      <div className="mb-4 flex justify-between">
+      <div className="mb-4 text-center">
         <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Sign Up</button>
       </div>
     </form>
