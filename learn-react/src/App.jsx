@@ -1,10 +1,11 @@
- import SignupForm from './components/SignupForm'
+ import LoginForm from './components/LoginForm'
+import SignupForm from './components/SignupForm'
 
 function App() {
 
   return (
     <>
-    <SignupForm />
+    <LoginForm />
     </>
   )
 }
