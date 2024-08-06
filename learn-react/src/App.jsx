@@ -1,9 +1,9 @@
- import ContactForm from './components/ContactForm'
+import Todos from './Todos/Todos'
 function App() {
 
   return (
     <>
-    <ContactForm />
+    <Todos />
     </>
   )
 }
