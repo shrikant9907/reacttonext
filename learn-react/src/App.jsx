@@ -1,9 +1,10 @@
-import Todos from './Todos/Todos'
+import Tabs from "./components/Tabs"
+
 function App() {
 
   return (
-    <>
-    <Todos />
+    <> 
+    <Tabs />
     </>
   )
 }
