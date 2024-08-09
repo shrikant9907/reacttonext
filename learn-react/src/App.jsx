@@ -1,10 +1,10 @@
-import Tabs from "./components/Tabs"
+import DropdownMenu from "./components/DropdownMenu"
 
 function App() {
 
   return (
     <> 
-    <Tabs />
+    <DropdownMenu />
     </>
   )
 }
