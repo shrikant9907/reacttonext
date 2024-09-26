@@ -2,7 +2,7 @@
 const nextConfig = {
     output: 'export',
     reactStrictMode: true,
-    basePath: '/reacttonext.com',
+    basePath: '/',
     assetPrefix: '/',
   };
 
