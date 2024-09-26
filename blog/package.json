@@ -7,15 +7,15 @@
     "build": "next build",
     "export": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
     "next": "14.2.13",
     "react": "^18",
     "react-dom": "^18",
-    "serve": "^14.2.3",
-    "deploy": "gh-pages -d out"
+    "serve": "^14.2.3"
   },
   "devDependencies": {
     "eslint": "^8",
