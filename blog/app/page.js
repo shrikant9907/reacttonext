@@ -1,7 +1,6 @@
 'use client'
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
+import { useEffect, useState } from "react"; 
 
 export default function Home() {
   const [countdown, setCountdown] = useState({ days: 10, hours: 0, minutes: 0, seconds: 0 });
