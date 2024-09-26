@@ -52,7 +52,7 @@ export default function Home() {
         <div className=" bg-red-600 p-3 px-5 rounded-3xl justify-center flex gap-4 items-center">
           <a
             className=""
-            href="https://youtube.com/reacttonext" 
+            href="https://www.youtube.com/@reacttonext" 
             target="_blank"
             rel="noopener noreferrer"
           >
